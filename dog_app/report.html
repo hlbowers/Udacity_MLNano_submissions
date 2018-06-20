@@ -13128,7 +13128,7 @@ test_{network} = bottleneck_features['test']</code></pre>
 
 </code></pre>
 <p><strong>Question 5:</strong> Outline the steps you took to get to your final CNN architecture and your reasoning at each step.  Describe why you think the architecture is suitable for the current problem.</p>
-<p><strong>Answer:</strong></p>
+<p><strong>Answer:</strong> I used transfer learning starting with the Resnet50, which is an appropriate starting point because it is an image classifier.  I reduce dimensionality using the GAP, then I customized the algorithm to classify the 133 breeds of dogs. The number of parameters is reasonable.  My earlier from-scratch CNN didn't work well because it didn't have the power of a carefully trained image feature detection CNN which would have taken longer than this project to get to the same level of refinement (the Resnet50).</p>
 
 </div>
 </div>
